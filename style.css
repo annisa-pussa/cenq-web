@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     --main-color: #033b17;
     --secondary-color: #0c7231;
@@ -5,6 +8,9 @@
     --more-light-color: #7ed957;
     --highlight-color: #ffdf3a;
     --soft-color: #b9e086;
+    --font-ui: 'Fira Code', monospace;
+    --font-title: "Instrument Serif", serif;
+    --font-brand: "Poppins", sans-serif;
 }
 
 html {
@@ -13,16 +19,16 @@ html {
 
 *, *::before, *::after {
     box-sizing: inherit;
-    font-family: var(--font-ui);
 }
 
 body {
     background-color: var(--main-color);
     color: white;
+    font-family: var(--font-ui);
 }
 
 .container {
-    margin: 0 2%;
+    margin: 1.2% 2% 0;
 }
 
 nav, nav > .brand {
@@ -32,12 +38,28 @@ nav, nav > .brand {
 }
 
 nav > .brand {
-    gap: 5px;
+    gap: 10px;
+    font-family: var(--font-brand);
+}
+
+nav > .brand > .brand-text > span {
+    display: block;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+nav > .brand > .brand-text > span:nth-child(2) {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+nav > .brand > .brand-text > span:last-child {
+    font-size: 9px;
+    font-style: italic;
 }
 
 nav > .menu > ul > li > a {
     color: white;
-    text-decoration: none;
 }
 
 nav > .menu > ul {
@@ -49,28 +71,25 @@ nav > .menu > ul > li {
     list-style: none;
 }
 
-nav > .menu > ul > li:hover {
-    border-bottom: 2px solid var(--more-light-color);
-}
-
 nav > .menu > ul > li:active {
     opacity: 50%;
 }
 
 nav > .call-to-action > button {
-    background: linear-gradient(to bottom, #0c7231 5%, #033b17 100%);
-    background-color: #0c7231;
-    border-radius: 6px;
-    border: 1px solid #033515;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 15px;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    transition: background 0.5s linear, color 0.5s linear;
+    padding: 8px 25px;
     font-weight: bold;
-    padding: 6px 24px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #033b17;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: var(--font-ui);
+}
+
+nav > .call-to-action > button:hover {
+    background: white;
+    color: var(--main-color);
 }
 
 nav > .call-to-action > button:active {
