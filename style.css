@@ -18,7 +18,41 @@ html {
 
 body {
     background-color: var(--main-color);
-    display: flex;
-    justify-content: center;
     color: white;
+}
+
+.container{
+    margin: 0 2%;
+}
+
+nav, nav > .brand{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav > .brand{
+    gap: 5px;
+}
+
+nav > .menu > ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+
+nav > .menu > ul {
+    display: flex;
+    gap: 3em;
+}
+
+nav > .menu > ul > li{
+    list-style: none;
+}
+
+nav > .menu > ul > li:hover{
+    border-bottom: 2px solid var(--more-light-color);
+}
+
+nav > .menu > ul > li:active{
+    opacity: 50%;
 }
