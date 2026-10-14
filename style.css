@@ -1,8 +1,24 @@
-:root{
+:root {
     --main-color: #033b17;
     --secondary-color: #0c7231;
     --light-color: #62b74f;
     --more-light-color: #7ed957;
     --highlight-color: #ffdf3a;
-    --soft-color: #b9e086;
+    --soft-color: #b9e086
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    font-family: 'Fira Code', monospace;
+}
+
+body {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    color: white;
 }
