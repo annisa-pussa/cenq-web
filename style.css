@@ -4,7 +4,7 @@
     --light-color: #62b74f;
     --more-light-color: #7ed957;
     --highlight-color: #ffdf3a;
-    --soft-color: #b9e086
+    --soft-color: #b9e086;
 }
 
 html {
@@ -13,7 +13,7 @@ html {
 
 *, *::before, *::after {
     box-sizing: inherit;
-    font-family: 'Fira Code', monospace;
+    font-family: var(--font-ui);
 }
 
 body {
@@ -21,21 +21,21 @@ body {
     color: white;
 }
 
-.container{
+.container {
     margin: 0 2%;
 }
 
-nav, nav > .brand{
+nav, nav > .brand {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-nav > .brand{
+nav > .brand {
     gap: 5px;
 }
 
-nav > .menu > ul > li > a{
+nav > .menu > ul > li > a {
     color: white;
     text-decoration: none;
 }
@@ -45,14 +45,35 @@ nav > .menu > ul {
     gap: 3em;
 }
 
-nav > .menu > ul > li{
+nav > .menu > ul > li {
     list-style: none;
 }
 
-nav > .menu > ul > li:hover{
+nav > .menu > ul > li:hover {
     border-bottom: 2px solid var(--more-light-color);
 }
 
-nav > .menu > ul > li:active{
+nav > .menu > ul > li:active {
     opacity: 50%;
+}
+
+nav > .call-to-action > button {
+    background: linear-gradient(to bottom, #0c7231 5%, #033b17 100%);
+    background-color: #0c7231;
+    border-radius: 6px;
+    border: 1px solid #033515;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #033b17;
+}
+
+nav > .call-to-action > button:active {
+    position: relative;
+    top: 1px;
 }
