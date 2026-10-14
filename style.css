@@ -44,13 +44,17 @@ nav > .brand {
 
 nav > .brand > .brand-text > span {
     display: block;
-    font-size: 18px;
+    font-size: 14.5px;
     line-height: 1.2;
+}
+
+nav > .brand > .brand-text > span:first-child{
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 nav > .brand > .brand-text > span:nth-child(2) {
     font-size: 11px;
-    text-transform: uppercase;
 }
 
 nav > .brand > .brand-text > span:last-child {
@@ -79,7 +83,7 @@ nav > .call-to-action > button {
     border: 2px solid white;
     background: none;
     color: white;
-    transition: background 0.5s linear, color 0.5s linear;
+    transition: background 0.5s linear, color 0.2s linear;
     padding: 8px 25px;
     font-weight: bold;
     border-radius: 10px;
@@ -95,4 +99,34 @@ nav > .call-to-action > button:hover {
 nav > .call-to-action > button:active {
     position: relative;
     top: 1px;
+}
+
+/* MAIN */
+main > section:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    height: 500px;
+    text-align: center;
+}
+
+main > section:first-child > .txt > h1, 
+main > section:first-child > .txt > h2 {
+    font-family: var(--font-title);
+    line-height: 0.3;
+}
+
+main > section:first-child > .txt > h1 {
+    font-size: 120px;
+}
+
+main > section:first-child > .txt > h2 {
+    font-size: 60px;
+}
+
+main > section:first-child > img{
+    border: 2px dashed white;
+    border-radius: 100%;
+    padding: 10px;
 }
