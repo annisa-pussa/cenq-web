@@ -160,4 +160,13 @@ main > section:nth-child(2) > .container:last-child > p {
     font-style: italic;
 }
 
-
+main > section:nth-child(3) {
+    background-image: url("cenq-bersama-menteri.png");
+    min-height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    border: 10px solid;
+}
