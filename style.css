@@ -48,7 +48,7 @@ nav > .brand > .brand-text > span {
     line-height: 1.2;
 }
 
-nav > .brand > .brand-text > span:first-child{
+nav > .brand > .brand-text > span:first-child {
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -111,8 +111,7 @@ main > section:first-child {
     text-align: center;
 }
 
-main > section:first-child > .txt > h1, 
-main > section:first-child > .txt > h2 {
+main > section:first-child > .txt > h1, main > section:first-child > .txt > h2, main > section > .container > h1.title {
     font-family: var(--font-title);
     line-height: 0.3;
 }
@@ -125,8 +124,40 @@ main > section:first-child > .txt > h2 {
     font-size: 60px;
 }
 
-main > section:first-child > img{
+main > section:first-child > img {
     border: 2px dashed white;
     border-radius: 100%;
     padding: 10px;
 }
+
+main > section:nth-child(2) > .container > h1.title {
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+main > section:nth-child(2) {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+main > section:nth-child(2) > .container {
+    flex: 1;
+}
+
+main > section:nth-child(2) > .container:first-child > h1.title {
+    font-size: 60px;
+}
+
+main > section:nth-child(2) > .container:first-child > p {
+    font-size: 23px;
+    font-style: italic;
+}
+
+main > section:nth-child(2) > .container:last-child > p {
+    font-size: 16px;
+    font-style: italic;
+}
+
+
