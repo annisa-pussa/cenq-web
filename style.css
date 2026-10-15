@@ -168,7 +168,7 @@ main > section:nth-child(3) {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px;
-    border: 10px solid;
+    border: 4px solid;
 }
 
 main > section:nth-child(4) {
