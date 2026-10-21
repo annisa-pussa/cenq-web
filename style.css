@@ -161,7 +161,7 @@ main > section:nth-child(2) > .container:last-child > p {
 }
 
 main > section:nth-child(3) {
-    background-image: url("cenq-bersama-menteri.png");
+    background-image: url("https://res.cloudinary.com/domrlue5g/image/upload/v1792548981/SPMB_Sistem_Penerimaan_Murid_Baru_Brosur_Biru_dan_Oranye_Geometrik_Modern_7_dctbze.png");
     min-height: 700px;
     background-attachment: fixed;
     background-position: center;
