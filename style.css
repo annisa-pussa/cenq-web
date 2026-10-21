@@ -183,7 +183,7 @@ main > section:nth-child(4) > .big-container {
     justify-content: center;
 }
 
-main > section:nth-child(4) > h1{
+main > section:nth-child(4) > h1 {
     font-family: var(--font-title);
     font-size: 60px;
     text-transform: uppercase;
@@ -200,12 +200,12 @@ main > section:nth-child(4) > .big-container > .container {
     align-items: center;
 }
 
-main > section:nth-child(4) > .big-container > .container > svg{
+main > section:nth-child(4) > .big-container > .container > svg {
     width: 100px;
     height: 100px;
 }
 
-main > section:nth-child(4) > .big-container > .container > h1{
+main > section:nth-child(4) > .big-container > .container > h1 {
     font-family: var(--font-title);
 }
 
@@ -213,7 +213,45 @@ main > section:nth-child(4) > .big-container > .container > ul {
     text-align: left;
 }
 
-main > section:nth-child(4) > .big-container > .container > ul > li,
-main > section:nth-child(4) > .big-container > .container > p {
+main > section:nth-child(4) > .big-container > .container > ul > li, main > section:nth-child(4) > .big-container > .container > p {
     font-size: 13px;
+}
+
+main > section:nth-child(5) > .big-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main > section:nth-child(5) > .big-container > .container {
+    flex: 1 1 400px;
+}
+
+main > section:nth-child(5) h1, main > section:nth-child(5) h2 {
+    font-family: var(--font-title);
+    text-transform: uppercase;
+}
+
+main > section:nth-child(5) > h1 {
+    font-size: 60px;
+}
+
+main > section:nth-child(5) h2 {
+    font-size: 32px;
+}
+
+main > section:nth-child(5) {
+    padding: 50px;
+}
+
+main > section:nth-child(5) > .big-container > .container > .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+main > section:nth-child(5) > .big-container > .container > .grid > img {
+    flex: 1 1;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 5px;
 }
