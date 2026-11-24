@@ -255,3 +255,43 @@ main > section:nth-child(5) > .big-container > .container > .grid > img {
     border: 2px solid white;
     border-radius: 5px;
 }
+
+main > section:nth-child(6) > .big-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main > section:nth-child(6) > .big-container > .container {
+    flex: 1 1 400px;
+}
+
+main > section:nth-child(6) h1, main > section:nth-child(5) h2 {
+    font-family: var(--font-title);
+    text-transform: uppercase;
+}
+
+main > section:nth-child(6) > h1 {
+    font-size: 60px;
+}
+
+main > section:nth-child(6) > .big-container > .container > ul > li {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+main > section:nth-child(6) {
+    padding: 50px;
+}
+
+main > section:nth-child(6) > .big-container > .container > .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+main > section:nth-child(6) > .big-container > .container > .grid > img {
+    object-fit: cover;
+    flex: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+}
