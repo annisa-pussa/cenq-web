@@ -264,7 +264,6 @@ main > section:nth-child(5) > .big-container > .container > .grid > img {
     border-radius: 5px;
 }
 
-
 main > section:nth-child(6) > .container {
     flex: 1 1 400px;
 }
@@ -273,7 +272,6 @@ main > section:nth-child(6) h1, main > section:nth-child(5) h2 {
     font-family: var(--font-title);
     text-transform: uppercase;
 }
-
 
 main > section:nth-child(6) > .container > ul > li {
     text-transform: uppercase;
@@ -307,10 +305,16 @@ main > section:nth-child(7) {
     justify-content: center;
     align-items: center;
     height: 500px;
-    margin: 0 4%;  gap: 25px;
-    font-size: 18px;
+    margin: 0 4%;
 }
 
+main > section:nth-child(7) > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    font-size: 18px;
+}
 
 main > section:nth-child(7) > .container > h1 {
     text-transform: uppercase;
