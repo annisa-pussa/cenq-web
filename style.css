@@ -33,7 +33,7 @@ body {
 }
 
 nav {
-    margin: 0 2%;
+    margin: 0 4%;
 }
 
 nav, nav > .brand {
@@ -114,6 +114,7 @@ main > section:first-child {
     gap: 25px;
     height: 500px;
     text-align: center;
+    margin: 0 4%;
 }
 
 main > section:first-child > .txt > h1, main > section:first-child > .txt > h2, main > section > .container > h1.title {
@@ -145,6 +146,7 @@ main > section:nth-child(2) {
     text-align: center;
     align-items: center;
     padding: 50px 0;
+    margin: 0 4%;
 }
 
 main > section:nth-child(2) > .container {
@@ -177,6 +179,7 @@ main > section:nth-child(3) {
 main > section:nth-child(4) {
     text-align: center;
     padding: 50px 0;
+    margin: 0 4%;
 }
 
 main > section:nth-child(4) > .big-container {
@@ -223,6 +226,7 @@ main > section:nth-child(4) > .big-container > .container > ul > li, main > sect
 main > section:nth-child(5) > .big-container {
     display: flex;
     flex-wrap: wrap;
+    gap: 2em;
 }
 
 main > section:nth-child(5) > .big-container > .container {
@@ -244,6 +248,7 @@ main > section:nth-child(5) h2 {
 
 main > section:nth-child(5) {
     padding: 50px;
+    margin: 0 4%;
 }
 
 main > section:nth-child(5) > .big-container > .container > .grid {
@@ -259,12 +264,8 @@ main > section:nth-child(5) > .big-container > .container > .grid > img {
     border-radius: 5px;
 }
 
-main > section:nth-child(6) > .big-container {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-main > section:nth-child(6) > .big-container > .container {
+main > section:nth-child(6) > .container {
     flex: 1 1 400px;
 }
 
@@ -273,26 +274,28 @@ main > section:nth-child(6) h1, main > section:nth-child(5) h2 {
     text-transform: uppercase;
 }
 
-main > section:nth-child(6) > h1 {
-    font-size: 60px;
-}
 
-main > section:nth-child(6) > .big-container > .container > ul > li {
-    font-size: 24px;
+main > section:nth-child(6) > .container > ul > li {
     text-transform: uppercase;
 }
 
 main > section:nth-child(6) {
     padding: 50px;
+    margin: 0 4%;
+    gap: 2em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-main > section:nth-child(6) > .big-container > .container > .grid {
+main > section:nth-child(6) > .container > .grid {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-main > section:nth-child(6) > .big-container > .container > .grid > img {
+main > section:nth-child(6) > .container > .grid > img {
     object-fit: cover;
     flex: auto;
     border: 2px solid white;
@@ -304,15 +307,10 @@ main > section:nth-child(7) {
     justify-content: center;
     align-items: center;
     height: 500px;
-}
-
-main > section:nth-child(7) > .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
+    margin: 0 4%;  gap: 25px;
     font-size: 18px;
 }
+
 
 main > section:nth-child(7) > .container > h1 {
     text-transform: uppercase;
@@ -326,6 +324,7 @@ main > section:nth-child(8) {
     justify-content: center;
     align-items: center;
     height: 500px;
+    margin: 0 4%;
 }
 
 main > section:nth-child(8) > .container {
