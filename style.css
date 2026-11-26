@@ -318,3 +318,26 @@ main > section:nth-child(7) > .container > h1 {
     font-size: 60px;
     text-align: center;
 }
+
+main > section:nth-child(8){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+main > section:nth-child(8) > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    font-size: 18px;
+}
+
+
+main > section:nth-child(8) > .container > h1 {
+    text-transform: uppercase;
+    font-family: var(--font-title);
+    font-size: 60px;
+    text-align: center;
+}
